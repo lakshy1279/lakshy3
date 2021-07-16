@@ -20,6 +20,15 @@ app.get("/contact",(req,res)=> {
 app.get("/signup",(req,res)=> {
   res.sendFile(path.join(__dirname + "/views/signup.html"));
 });
+app.get("/blogdetails",(req,res)=> {
+  res.sendFile(path.join(__dirname + "/views/blog-details.html"));
+});
+app.get("/tourdetails",(req,res)=> {
+  res.sendFile(path.join(__dirname + "/views/tour-details.html"));
+});
+app.get("/about",(req,res)=> {
+  res.sendFile(path.join(__dirname + "/views/about.html"));
+});
 app.listen(port, function (err) {
   if (err) {
     console.log(`error in running the server: ${err}`);
